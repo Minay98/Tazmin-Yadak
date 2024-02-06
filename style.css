@@ -13,3 +13,18 @@
 .back1 {
     background-image: url('./image/back1.jpg');
 }
+
+.back2 {
+    background-image: url('./image/back2.svg');
+    height: 220px;
+    width: 100%;
+  
+}
+
+.back3 {
+    
+    background-image: linear-gradient(to left, #000000, #E54429);
+    height: 220px;
+    width: 100%;
+    opacity: 0.7;
+}
