@@ -32,3 +32,15 @@
 .button{
     visibility: hidden;
 }
+
+.back4 {
+    background-image: linear-gradient(to right, #101013, #00000000);
+    height: 275px;
+    width: 610px;
+}
+
+.back5 {
+    background-image: url(./image/back3.svg);
+    height: 275px;
+    width: 610px;
+}
