@@ -30,7 +30,7 @@ function deselectOthers(selectedIndex) {
             tab[k].style.height = "";
             tab[k].style.color = "";
             icons[k].style.backgroundColor = "";
-            button[k].style.visibility = "hidden"; // مخفی کردن دکمه‌ها
+            button[k].style.visibility = "hidden"; 
         }
     }
 }
@@ -48,38 +48,6 @@ let shop = document.getElementsByClassName('count-shop');
 let counter = document.getElementsByClassName('counter');
 let increaseBtn = document.getElementsByClassName('increaseBtn');
 let decreaseBtn = document.getElementsByClassName('decreaseBtn');
- 
-/* let val = [];
-for (let i=0; i<shop.length; i++){
-    val.push(0)
-}
-
- function increaseCounter() {
-    for (let i=0; i<shop.length; i++){
-        val[i]++;
-        counter[i].innerText = val[i];
-        if (counterValue == 1) {
-            decreaseBtn[i].style.display = "block";
-            counter[i].style.display = 'block';
-        }
-    }
-
- }
-
- function decreaseCounter() {
-    for(let i=0; i<shop.length; i++){
-        val[i]--;
-        if (val[i] == 0 ) {
-            decreaseBtn[i].style.display = "none";
-           counter[i].style.display = "none";
-        }else{
-           counter[i].innerText = val[i];
-        }
-    }
-    
- }
-
- */
  let val = [];
  for (let i=0; i<shop.length; i++){
      val.push(0);
