@@ -42,3 +42,76 @@ function toggleButtonVisibility(index) {
         button[index].style.visibility = "visible";
     }
 }
+
+
+let shop = document.getElementsByClassName('count-shop');
+let counter = document.getElementsByClassName('counter');
+let increaseBtn = document.getElementsByClassName('increaseBtn');
+let decreaseBtn = document.getElementsByClassName('decreaseBtn');
+ 
+/* let val = [];
+for (let i=0; i<shop.length; i++){
+    val.push(0)
+}
+
+ function increaseCounter() {
+    for (let i=0; i<shop.length; i++){
+        val[i]++;
+        counter[i].innerText = val[i];
+        if (counterValue == 1) {
+            decreaseBtn[i].style.display = "block";
+            counter[i].style.display = 'block';
+        }
+    }
+
+ }
+
+ function decreaseCounter() {
+    for(let i=0; i<shop.length; i++){
+        val[i]--;
+        if (val[i] == 0 ) {
+            decreaseBtn[i].style.display = "none";
+           counter[i].style.display = "none";
+        }else{
+           counter[i].innerText = val[i];
+        }
+    }
+    
+ }
+
+ */
+ let val = [];
+ for (let i=0; i<shop.length; i++){
+     val.push(0);
+ }
+
+
+for(let i=0; i<shop.length; i++){
+    increaseBtn[i].addEventListener("click", function(){
+        increaseCounter(i);
+    })
+    decreaseBtn[i].addEventListener("click", function(){
+        decreaseCounter(i);
+    })
+}
+function increaseCounter(i){
+    val[i]++;
+    counter[i].innerText = val[i];
+    if (val[i] == 1) {
+        decreaseBtn[i].style.display = "block";
+        counter[i].style.display = 'block';
+    }
+}
+
+function decreaseCounter(i){
+    val[i]--;
+    if(val[i] < 0){
+        val[i] =0;
+    }
+    if (val[i] == 0 ) {
+        decreaseBtn[i].style.display = "none";
+        counter[i].style.display = "none";
+    }else{
+        counter[i].innerText = val[i];
+    }
+}

@@ -31,7 +31,6 @@
 
 .button{
     visibility: hidden;
-<<<<<<< HEAD
 }
 
 .back4 {
@@ -44,6 +43,12 @@
     background-image: url(./image/back3.svg);
     height: 275px;
     width: 610px;
-=======
->>>>>>> c72e286d1fb445e7ff63c9936e660de643ba1ab9
+
+}
+
+.decreaseBtn {
+    display: none;
+}
+.counter {
+    display: none;
 }
