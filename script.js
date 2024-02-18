@@ -30,16 +30,16 @@ function deselectOthers(selectedIndex) {
             tab[k].style.height = "";
             tab[k].style.color = "";
             icons[k].style.backgroundColor = "";
-            button[k].style.visibility = "hidden"; 
+            button[k].style.display = "none"; 
         }
     }
 }
 
 function toggleButtonVisibility(index) {
-    if (button[index].style.visibility === "visible") {
-        button[index].style.visibility = "hidden";
+    if (button[index].style.display === "block") {
+        button[index].style.display = "none";
     } else {
-        button[index].style.visibility = "visible";
+        button[index].style.display = "block";
     }
 }
 

@@ -1,9 +1,33 @@
+@font-face {
+    font-family: YekanBakh;
+    src: url('./fonts/YekanBakh-Regular.woff') format('woff'),
+    url('./fonts/YekanBakh-Regular.woff2') format('woff2');
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: YekanBakh;
 }
+html {
+    scroll-behavior: smooth;
+  }
+
+body::-webkit-scrollbar {
+    width: 52px;
+    height: 100%;
+    background-color: revert-layer;
+}
+    
+    
+body::-webkit-scrollbar-thumb {
+background-image: url("./image/car-9.svg");
+/* background-position: center bottom, top; */
+background-repeat: no-repeat, no-repeat;
+}
+
+
 .back{ 
     background-image: url('./image/bg-02\ 2.png');
     background-size: cover;
@@ -30,7 +54,7 @@
 }
 
 .button{
-    visibility: hidden;
+    display: none;
 }
 
 .back4 {
@@ -51,4 +75,8 @@
 }
 .counter {
     display: none;
+}
+
+.number {
+    font-family: YekanBakh;
 }
