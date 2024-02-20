@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../build/output.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 <section class="bg-[#1E222D] h-[60px] w-full bg-fixed"></section>
@@ -34,11 +35,11 @@
             <span class="mr-[17px] ml-[69px] mb-[3px] hover:font-bold">دسته بندی</span>
             <img src="../image/chevron-down.png" />
         </button>
-        <a href="#" class="hover:font-medium">خرید اقساطی</a>
-        <a href="#" class="hover:font-medium">محاسبه داغی</a>
-        <a href="#" class="hover:font-medium">تخفیف خرید عمده</a>
-        <a href="#" class="hover:font-medium">فروشنده شو</a>
-        <a href="#" class="hover:font-medium">کارشناسی خودرو</a>
+        <a href="#" class="hover:font-bold">خرید اقساطی</a>
+        <a href="#" class="hover:font-bold">محاسبه داغی</a>
+        <a href="#" class="hover:font-bold">تخفیف خرید عمده</a>
+        <a href="#" class="hover:font-bold">فروشنده شو</a>
+        <a href="#" class="hover:font-bold">کارشناسی خودرو</a>
     </nav> 
    </section>
 
@@ -113,31 +114,19 @@
             <header class="grid grid-cols-[1fr_2.5fr_0.3fr] ">
                 <h1 class="font-bold text-2xl text-[#3E4151]">محصولات حراجی تضمین یدک</h1>
                 <section class="relative ">
-                    <div class="h-[1px] w-full bg-slate-300 absolute top-[50%]">
-                    </div>
-                    <img src="../image/time.jpg" alt="" class="absolute left-[50%] translate-x-[-50%]">
+                    <div class="h-[1px] w-full bg-slate-300 absolute top-[50%]"></div>
+                    <section  alt="" class="w-[350px] bg-[#1E222D] text-white py-2 rounded-[40px] absolute left-[50%] translate-x-[-50%] flex justify-around ">
+                        <span class="font-thin">فرصت محدود</span>
+                        <span id="timer" class="font-semibold font-[number]"></span>
+                        <img src="../image/octicon_clock-24.svg" alt="">
+                    </section>
                 </section>
                 <button class="flex items-center justify-center border-[1px] rounded-3xl px-2">
                     <img src="../image/Vector-right.png" alt="" class="inline ml-[61px] w-[6px] h-3">
                     <img src="../image/Vector-left.png" alt="" class="inline w-[6px] h-3">
                 </button>
             </header>
-            <!-- <header class="grid gr ">
-                <h1 class="text-[22px] font-semibold">محصولات حراجی تضمین یدک</h1>
-                <section class="flex">
-                    <div class="h-1 w-full bg-slate-600">
-                    </div>
-                    <section class="">
 
-                    
-                        <img src="../image/time.jpg" alt="">
-                    </section>
-                        <section class="flex items-center border-[1px] rounded-3xl px-2">
-                            <img src="../image/Vector-right.png" alt="" class="inline ml-[61px] w-[6px] h-3">
-                            <img src="../image/Vector-left.png" alt="" class="inline w-[6px] h-3">
-                        </section>
-                </section>
-            -->
             </header>
             <section class="flex gap-5 mt-[26px]">
                 <section class="back1 w-[294px] h-[383px] grid items-center justify-center pt-6">
@@ -149,16 +138,24 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/chair.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
+                       
+
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -173,16 +170,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/cat-4 1.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -197,16 +200,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/car2.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -224,7 +233,7 @@
         
         <section class="w-full h-[553px] bg-[#F6F6FB] mb-[50px] rounded-[18px]">
             <header class="w-full h-[160px] bg-[#1E222D] rounded-t-[18px] p-6 grid justify-center justify-items-center">
-                <h1 class="text-white font-extrabold text-5xl text-[#3E4151]">قطعه یاب تضمین یدک</h1>
+                <h1 class="font-extrabold text-5xl text-white">قطعه یاب تضمین یدک</h1>
                 <span class="text-white font-normal text-xl">فقط کافیه مدل ماشین و قطعه ای که میخوای رو به ما بگی ما بهترین قیمتو بهت پیشنهاد میدیم</span>
             </header>
             <section class="h-[177px] flex justify-center justify-items-center items-center gap-10 mt-7">
@@ -308,22 +317,6 @@
                     <img src="../image/Vector-left.png" alt="" class="inline w-[6px] h-3">
                 </button>
             </header>
-            <!-- <header class="grid gr ">
-                <h1 class="text-[22px] font-semibold">محصولات حراجی تضمین یدک</h1>
-                <section class="flex">
-                    <div class="h-1 w-full bg-slate-600">
-                    </div>
-                    <section class="">
-
-                    
-                        <img src="../image/time.jpg" alt="">
-                    </section>
-                        <section class="flex items-center border-[1px] rounded-3xl px-2">
-                            <img src="../image/Vector-right.png" alt="" class="inline ml-[61px] w-[6px] h-3">
-                            <img src="../image/Vector-left.png" alt="" class="inline w-[6px] h-3">
-                        </section>
-                </section>
-            -->
             </header>
             <section class="flex gap-5 mt-[26px]">
                 <section class="back1 w-[294px] h-[383px] grid items-center justify-center pt-6">
@@ -335,16 +328,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/f-3 1.svg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -359,16 +358,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/Vector.svg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -383,16 +388,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/Vector.svg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>
                         </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
@@ -517,17 +528,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                                                <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/chair.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>
@@ -541,17 +557,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/cat-4 1.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>
@@ -565,17 +586,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/car2.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>
@@ -598,17 +624,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/chair.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>
@@ -622,17 +653,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/cat-4 1.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>
@@ -646,17 +682,22 @@
                 </section>
                 <section class="border-[1px] rounded-[18px] w-[294px] h-[383px] grid grid-cols-1 justify-center">
                     <header class="flex justify-between items-center mx-5">
-                        <button class="p-[10px] bg-[#F6F6FB] rounded-[36px]">
-                            <img src="../image/heart1.png" alt="" class="inline size-5">
-                        </button>
+                        <button class="bg-[#F6F6FB] rounded-full flex justify-center p-3 pr-4 pb-4">
+                            <i class="material-symbols-outlined size-5 favorite">Favorite</i>
+                       </button>
                         <img src="../image/Frame 1000006008.png" alt="">
                     </header>
                     <img src="../image/car2.jpg" alt="" class="justify-self-center">
                     <section class="px-4 grid">
                         <section class="flex justify-between items-center">
                             <span class="font-normal text-sm text-[#EB3300] bg-[#EB330026] rounded-[25px] px-[10px] py-1">سیستم صوتی</span>
-                            <img src="../image/star.jpg" alt="" class="w-[100px]">
-                        </section>    
+                            <section class="flex">
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                                <button><i class="material-symbols-outlined icon-star">Grade</i></button>
+                            </section>                        </section>    
                         <span class="font-normal text-lg justify-self-start">تایر عقب خودروی پراید ۱۳۸۰</span>  
                         <section class="flex justify-between items-center pb-5">
                             <span class="font-semibold text-xl">۲,۰۰۰,۰۰۰ تومان</span>

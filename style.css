@@ -3,6 +3,10 @@
     src: url('./fonts/YekanBakh-Regular.woff') format('woff'),
     url('./fonts/YekanBakh-Regular.woff2') format('woff2');
 }
+@font-face {
+    font-family: number;
+    src: url('./fonts/YekanBakhFaNum-Regular.woff') format('woff');
+}
 
 *{
     margin: 0;
@@ -77,6 +81,29 @@ background-repeat: no-repeat, no-repeat;
     display: none;
 }
 
-.number {
-    font-family: YekanBakh;
+#number {
+    font-family: number;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon-star {
+    color: #FFCB15;
+}
+
+/* .icon-star:hover {
+    font-variation-settings:
+     'FILL' 1
+
+} */
+
+.favorite{
+    color: #E54429;
 }

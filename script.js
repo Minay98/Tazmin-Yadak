@@ -1,3 +1,4 @@
+//////////////////////////////// select tab ///////////////////////////////////////
 let icons = document.getElementsByClassName('icons');
 let tab = document.getElementsByClassName('tab');
 let button = document.getElementsByClassName('button');
@@ -43,6 +44,7 @@ function toggleButtonVisibility(index) {
     }
 }
 
+///////////////////////// cart ///////////////////////////
 
 let shop = document.getElementsByClassName('count-shop');
 let counter = document.getElementsByClassName('counter');
@@ -83,3 +85,36 @@ function decreaseCounter(i){
         counter[i].innerText = val[i];
     }
 }
+
+///////////////////////////// timer /////////////////////////////////
+
+let second=5, minute=1, hour=3, day=1;
+
+let timer = setInterval(function(){
+    if(second == -1){
+        minute--;
+        second=59;
+        if(minute == -1){
+            hour--;
+            minute=59;
+            if(hour == -1){
+                day--;
+                hour = 23;
+            }
+        }
+    }
+    if(day == 0 && hour == 0 && minute == 0 && second==0){
+        clearInterval(timer)
+    }
+    console.log('Timer: ' + day + ' : ' + hour + ':' + minute + ':' + second);
+     // Format the time values to always have two digits
+     let formattedTime = `${(day < 10 ? '0' : '') + day} : ${(hour < 10 ? '0' : '') + hour} : ${(minute < 10 ? '0' : '') + minute} : ${(second < 10 ? '0' : '') + second}`;
+    
+     // Access the HTML element with id "timer" and set its innerHTML
+     document.getElementById('timer').innerHTML =  formattedTime;
+     document.getElementById('timer').style.direction = 'ltr';
+    second--;
+    
+
+}, 1000)
+
