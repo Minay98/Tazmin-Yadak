@@ -107,14 +107,30 @@ let timer = setInterval(function(){
         clearInterval(timer)
     }
     console.log('Timer: ' + day + ' : ' + hour + ':' + minute + ':' + second);
-     // Format the time values to always have two digits
      let formattedTime = `${(day < 10 ? '0' : '') + day} : ${(hour < 10 ? '0' : '') + hour} : ${(minute < 10 ? '0' : '') + minute} : ${(second < 10 ? '0' : '') + second}`;
     
-     // Access the HTML element with id "timer" and set its innerHTML
      document.getElementById('timer').innerHTML =  formattedTime;
      document.getElementById('timer').style.direction = 'ltr';
     second--;
     
 
 }, 1000)
+
+
+var clickCount = 0;
+function on() {
+    if (clickCount%2 == 0) {
+        this.classList.add('material-symbols-outlined2');
+    } else {
+        this.classList.remove('material-symbols-outlined2');
+    }
+
+    clickCount++;
+}
+
+var iconElements = document.querySelectorAll('.icon-star'); 
+let i = iconElements.length;
+iconElements.forEach(function(icon) {
+    icon.addEventListener('click', on);
+});
 
