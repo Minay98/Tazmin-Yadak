@@ -128,9 +128,9 @@ function on() {
     clickCount++;
 }
 
-var iconElements = document.querySelectorAll('.icon-star'); 
-let i = iconElements.length;
-iconElements.forEach(function(icon) {
-    icon.addEventListener('click', on);
-});
+// var iconElements = document.querySelectorAll('.icon-star'); 
+// let i = iconElements.length;
+// iconElements.forEach(function(icon) {
+//     icon.addEventListener('click', on);
+// });
 
