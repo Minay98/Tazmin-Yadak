@@ -79,6 +79,7 @@ background-repeat: no-repeat, no-repeat;
 }
 .counter {
     display: none;
+    font-family: number;
 }
 
 #number {
