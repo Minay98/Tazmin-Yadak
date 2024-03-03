@@ -133,4 +133,3 @@ let i = iconElements.length;
 iconElements.forEach(function(icon) {
     icon.addEventListener('click', on);
 });
-
