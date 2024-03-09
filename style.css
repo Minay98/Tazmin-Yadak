@@ -46,19 +46,6 @@ background-repeat: no-repeat, no-repeat;
     display: none;
 }
 
-/* .back4 {
-    background-image: linear-gradient(to right, #101013, #00000000);
-    height: 275px;
-    width: 610px;
-}
-
-.back5 {
-    background-image: url(./image/back3.svg);
-    height: 275px;
-    width: 610px;
-
-} */
-
 .decreaseBtn {
     display: none;
 }
@@ -99,12 +86,6 @@ background-repeat: no-repeat, no-repeat;
 .icon-star {
     color: #FFCB15;
 }
-
-/* .icon-star:hover {
-    font-variation-settings:
-     'FILL' 1
-
-} */
 
 .favorite{
     color: #E54429;
